@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* para não estourar a largura do container */
+}
+
+.slider__wrapper {
+  /* para esconder a barra de rolagem */
+  overflow: hidden;
+}
+
+.slider__wrapper .slider__items {
+  display: flex;
+}
+
+.slider__wrapper .slider__items .slider__item {
+  /* para não diminuir o flex-item */
+  flex-shrink: 0;
+  /* 80% da largura da tela */
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+}
